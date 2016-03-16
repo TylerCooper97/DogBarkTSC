@@ -17,7 +17,7 @@ public class Dog {
 		return weight;
 	}
 	
-	public void setSize (int s) {
+	public void setWeight (int s) {
 		weight = s;
 	}
 
