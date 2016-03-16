@@ -10,6 +10,14 @@ public class DogTestDrive {
 		Dog two = new Dog();
 		
 		two.setWeight(8);
+		
+		System.out.println("Dog one: " + one.getWeight());
+		
+		System.out.println("Dog two: " + two.getWeight());
+		
+		one.bark();
+		
+		two.bark();
 	}
 
 }
