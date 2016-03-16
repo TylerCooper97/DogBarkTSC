@@ -1,33 +1,30 @@
 package edu.saintjoe.cs.tcooper.dogbarktsc;
 
+/*
+ * class Dog
+ * This is the Dog program from page 61 of the book
+ * Programmed by Tyler Cooper March 16, 2016
+ * This is straight from the book but I will be changing it
+ */
+
 public class Dog {
-	String name;
+	
+	//This value represents the dog's size as exhibited by it's weight
+	private int weight;
 
-	public static void main(String[] args) {
-		Dog dog1 = new Dog();
-		dog1.bark();
-		dog1.name = "Bart";
-		
-		Dog[] myDogs = new Dog [3];
-		myDogs[0] = new Dog();
-		myDogs[1] = new Dog();
-		myDogs[2] = dog1;
-		
-		myDogs[0].name = "Fred";
-		myDogs[1].name = "Marge";
-		
-		System.out.println("last dog's name is ");
-		System.out.println(myDogs[2].name);
-		
-		int x = 0;
-		while (x < myDogs.length) {
-			myDogs[x].bark();
-			x = x + 1;
-		}
-
+	/*-------------------------------------------------*/
+	public int getWeight() {
+		return weight;
 	}
 
-public void bark() {
-	System.out.println(name + " says Ruff!");
-	}
+void bark() {
+	
+	if (weight > 60) {
+		System.out.println("Woof! Woof!");
+	} else if (weight > 14) {
+		System.out.println("Ruff! Ruff!");
+	} else
+		System.out.println("Yip! Yip!");
 }
+}
+
