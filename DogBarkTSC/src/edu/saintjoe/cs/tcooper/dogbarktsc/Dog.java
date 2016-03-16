@@ -16,6 +16,10 @@ public class Dog {
 	public int getWeight() {
 		return weight;
 	}
+	
+	public void setSize (int s) {
+		weight = s;
+	}
 
 void bark() {
 	
